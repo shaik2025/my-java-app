@@ -15,3 +15,8 @@ jobs:
             uses: actions/checkout@v6
           - name: package the code
             run: mvn package
+          - name: publish test results
+            uses: EnricoMi/publish-unit-test-result-action@v2
+            with:
+                files: "**/target/surefire-reports/**/*.xml"
+                comment_mode: always
