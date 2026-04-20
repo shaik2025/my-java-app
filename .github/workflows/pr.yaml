@@ -54,4 +54,4 @@ jobs:
               uses: docker/build-push-action@v7
               with:
                 push: false
-                tags: "shaik2025/my-java-app:latest"         
+                tags: "shaik2025/my-java-app:latest"           
